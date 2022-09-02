@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+Fri Sep 02 14:14:29 PDT 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0183-000e-1da2-000002b8c208 
+on database directory memory:F:\SpringBootProjects\CourseManagement\coursemanagement\1ff2d0d7-d232-4814-a6c9-038306a6f0be with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4d7e1886 
+Loaded from file:/C:/Users/Prabhat%20Kumar/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=18.0.2.1+1-1
+user.dir=F:\SpringBootProjects\CourseManagement\coursemanagement
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Sep 02 14:16:03 PDT 2022:
+Shutting down instance a816c00e-0183-000e-1da2-000002b8c208 on database directory memory:F:\SpringBootProjects\CourseManagement\coursemanagement\1ff2d0d7-d232-4814-a6c9-038306a6f0be with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4d7e1886 
