@@ -1,7 +1,5 @@
-package com.coursemanagement.coursemanagement.topic.topiccontroller;
+package com.coursemanagement.coursemanagement.topic;
 
-import com.coursemanagement.coursemanagement.topic.Topic;
-import com.coursemanagement.coursemanagement.topic.topicservice.TopicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -13,27 +11,32 @@ public class TopicController {
     @Autowired
     private TopicService topicService;
 
+    //Gets a list of all the topics
     @GetMapping(value="/topics")
     public List<Topic> getALlTopics() {
         return topicService.getAllTopics();
     }
 
+    //Gets topic with the provided topic id
     @GetMapping(value="/topics/{topicId}")
     public Optional<Topic> getTopicById(@PathVariable String topicId){
         return topicService.getTopicById(topicId);
     }
 
-    @RequestMapping(value="/addtopic", method=RequestMethod.POST)
+    //Adds a topic
+    @RequestMapping(value="/topics/addtopic", method=RequestMethod.POST)
     public void addTopic(@RequestBody Topic topic){
         topicService.addTopic(topic);
     }
 
-    @RequestMapping(value="/update", method=RequestMethod.PUT)
+    //Updates the topic
+    @RequestMapping(value="/topics/update", method=RequestMethod.PUT)
     public void updateTopic(@RequestBody Topic topic){
         topicService.updateTopic(topic);
     }
 
-    @RequestMapping(value="/delete/{topicId}", method=RequestMethod.DELETE)
+    //Deletes a topic
+    @RequestMapping(value="/topics/delete/{topicId}", method=RequestMethod.DELETE)
     public void deleteTopic(@PathVariable String topicId){
         topicService.deleteTopic(topicId);
     }

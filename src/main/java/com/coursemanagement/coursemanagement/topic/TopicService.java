@@ -1,7 +1,5 @@
-package com.coursemanagement.coursemanagement.topic.topicservice;
+package com.coursemanagement.coursemanagement.topic;
 
-import com.coursemanagement.coursemanagement.topic.Topic;
-import com.coursemanagement.coursemanagement.topic.TopicRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
