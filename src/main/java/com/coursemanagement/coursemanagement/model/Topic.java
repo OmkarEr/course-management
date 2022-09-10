@@ -1,11 +1,11 @@
-package com.coursemanagement.coursemanagement.topic;
+package com.coursemanagement.coursemanagement.model;
 
 import javax.persistence.*;
 
 @Entity
 public class Topic {
     @Id
-    private String topicId;
+    private String id;
     private String topicName;
     private String topicDescription;
 
@@ -13,17 +13,17 @@ public class Topic {
     }
 
     public Topic(String topicId, String topicName, String topicDescription) {
-        this.topicId = topicId;
+        this.id = topicId;
         this.topicName = topicName;
         this.topicDescription = topicDescription;
     }
 
     public String getTopicId() {
-        return topicId;
+        return id;
     }
 
     public void setTopicId(String topicId) {
-        this.topicId = topicId;
+        this.id = topicId;
     }
 
     public String getTopicName() {

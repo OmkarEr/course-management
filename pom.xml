@@ -12,7 +12,7 @@
 	<artifactId>coursemanagement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>coursemanagement</name>
-	<description>REST service to manage courses and topics</description>
+	<description>REST service to manage cours and topics</description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>

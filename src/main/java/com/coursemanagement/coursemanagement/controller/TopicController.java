@@ -1,5 +1,7 @@
-package com.coursemanagement.coursemanagement.topic;
+package com.coursemanagement.coursemanagement.controller;
 
+import com.coursemanagement.coursemanagement.model.Topic;
+import com.coursemanagement.coursemanagement.service.TopicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;

@@ -1,6 +1,5 @@
-package com.coursemanagement.coursemanagement.course;
+package com.coursemanagement.coursemanagement.model;
 
-import com.coursemanagement.coursemanagement.topic.Topic;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -9,7 +8,7 @@ import javax.persistence.ManyToOne;
 public class Course {
 
     @Id
-    private String courseId;
+    private String id;
     private String courseName;
     private String courseDescription;
 
@@ -20,18 +19,18 @@ public class Course {
     }
 
     public Course(String courseId, String courseName, String courseDescription, String topicId) {
-        this.courseId = courseId;
+        this.id = courseId;
         this.courseName = courseName;
         this.courseDescription = courseDescription;
         this.topic = new Topic(topicId, "", "");
     }
 
     public String getCourseId() {
-        return courseId;
+        return id;
     }
 
     public void setCourseId(String courseId) {
-        this.courseId = courseId;
+        this.id = courseId;
     }
 
     public String getCourseName() {

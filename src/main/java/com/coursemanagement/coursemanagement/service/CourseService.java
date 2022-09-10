@@ -1,5 +1,7 @@
-package com.coursemanagement.coursemanagement.course;
+package com.coursemanagement.coursemanagement.service;
 
+import com.coursemanagement.coursemanagement.model.Course;
+import com.coursemanagement.coursemanagement.repository.CourseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,13 +15,13 @@ public class CourseService {
     @Autowired
     private CourseRepository courseRepository;
 
-    public List<Course> getAllCourses() {
+    public List<Course> getAllCourses(String topicId) {
         List<Course> courses = new ArrayList<>();
-        courseRepository.findAll().forEach(courses::add);
+        courseRepository.findByTopicId(topicId).forEach(courses::add);
         return courses;
     }
 
-    public Optional<Course> getCourseById(String topicId, String courseId) {
+    public Optional<Course> getCourseById(String courseId) {
         return courseRepository.findById(courseId);
     }
 
